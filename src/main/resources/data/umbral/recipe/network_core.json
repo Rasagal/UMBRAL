@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "CIC",
+    "IRI",
+    "CAC"
+  ],
+  "key": {
+    "C": "minecraft:copper_ingot",
+    "I": "minecraft:iron_ingot",
+    "R": "minecraft:redstone_block",
+    "A": "minecraft:amethyst_shard"
+  },
+  "result": {
+    "id": "umbral:network_core",
+    "count": 1
+  }
+}

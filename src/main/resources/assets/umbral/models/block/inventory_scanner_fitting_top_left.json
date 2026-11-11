@@ -1,0 +1,513 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": true,
+  "textures": {
+    "graphite": "umbral:block/metal_graphite",
+    "ivory": "umbral:block/metal_ivory",
+    "copper": "umbral:block/metal_copper",
+    "shadow": "umbral:block/shadow",
+    "amethyst": "umbral:block/amethyst",
+    "red": "umbral:block/red",
+    "door_graphite": "umbral:block/door_graphite",
+    "door_copper": "umbral:block/door_copper",
+    "door_steel": "umbral:block/door_steel",
+    "door_ivory": "umbral:block/door_ivory",
+    "door_ivory_light": "umbral:block/door_ivory_light",
+    "door_ivory_shade": "umbral:block/door_ivory_shade",
+    "door_gasket": "umbral:block/door_gasket",
+    "steel": "umbral:block/metal_steel",
+    "gasket": "umbral:block/metal_gasket",
+    "ivory_light": "umbral:block/metal_ivory_light",
+    "ivory_shade": "umbral:block/metal_ivory_shade",
+    "gold": "umbral:block/metal_gold",
+    "status": "umbral:block/amber",
+    "display": "umbral:block/display_off",
+    "optic": "umbral:block/sensor_lens",
+    "particle": "umbral:block/metal_graphite"
+  },
+  "elements": [
+    {
+      "name": "lamina",
+      "from": [
+        8,
+        14,
+        7.25
+      ],
+      "to": [
+        16,
+        16,
+        8.75
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            8,
+            2
+          ],
+          "texture": "#graphite"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            8,
+            2
+          ],
+          "texture": "#graphite"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.5,
+            2
+          ],
+          "texture": "#graphite"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.5,
+            2
+          ],
+          "texture": "#graphite"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            8,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            8,
+            1.5
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "nervio_frontal",
+      "from": [
+        8.2,
+        14.700000000000003,
+        7
+      ],
+      "to": [
+        15.8,
+        15.299999999999997,
+        7.25
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            7.600000000000001,
+            0.5999999999999943
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            7.600000000000001,
+            0.5999999999999943
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.25,
+            0.5999999999999943
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.25,
+            0.5999999999999943
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            7.600000000000001,
+            0.25
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            7.600000000000001,
+            0.25
+          ],
+          "texture": "#steel"
+        }
+      }
+    },
+    {
+      "name": "nervio_posterior",
+      "from": [
+        8.2,
+        14.700000000000003,
+        8.75
+      ],
+      "to": [
+        15.8,
+        15.299999999999997,
+        9.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            7.600000000000001,
+            0.5999999999999943
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            7.600000000000001,
+            0.5999999999999943
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.25,
+            0.5999999999999943
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.25,
+            0.5999999999999943
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            7.600000000000001,
+            0.25
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            7.600000000000001,
+            0.25
+          ],
+          "texture": "#steel"
+        }
+      }
+    },
+    {
+      "name": "grapa_frontal_8.6",
+      "from": [
+        8.6,
+        14.399999999999999,
+        6.85
+      ],
+      "to": [
+        9.2,
+        15.600000000000001,
+        7.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.15000000000000036,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.15000000000000036,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            0.15000000000000036
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            0.15000000000000036
+          ],
+          "texture": "#copper"
+        }
+      }
+    },
+    {
+      "name": "grapa_posterior_8.6",
+      "from": [
+        8.6,
+        14.399999999999999,
+        9
+      ],
+      "to": [
+        9.2,
+        15.600000000000001,
+        9.15
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.15000000000000036,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.15000000000000036,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            0.15000000000000036
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            0.15000000000000036
+          ],
+          "texture": "#copper"
+        }
+      }
+    },
+    {
+      "name": "grapa_frontal_14.8",
+      "from": [
+        14.8,
+        14.399999999999999,
+        6.85
+      ],
+      "to": [
+        15.4,
+        15.600000000000001,
+        7.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.15000000000000036,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.15000000000000036,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            0.15000000000000036
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            0.15000000000000036
+          ],
+          "texture": "#copper"
+        }
+      }
+    },
+    {
+      "name": "grapa_posterior_14.8",
+      "from": [
+        14.8,
+        14.399999999999999,
+        9
+      ],
+      "to": [
+        15.4,
+        15.600000000000001,
+        9.15
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.15000000000000036,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.15000000000000036,
+            1.2000000000000028
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            0.15000000000000036
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.5999999999999996,
+            0.15000000000000036
+          ],
+          "texture": "#copper"
+        }
+      }
+    }
+  ]
+}

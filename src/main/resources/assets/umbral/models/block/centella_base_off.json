@@ -1,0 +1,1065 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": true,
+  "textures": {
+    "graphite": "umbral:block/metal_graphite",
+    "ivory": "umbral:block/metal_ivory",
+    "copper": "umbral:block/metal_copper",
+    "shadow": "umbral:block/shadow",
+    "amethyst": "umbral:block/amethyst",
+    "red": "umbral:block/red",
+    "door_graphite": "umbral:block/door_graphite",
+    "door_copper": "umbral:block/door_copper",
+    "door_steel": "umbral:block/door_steel",
+    "door_ivory": "umbral:block/door_ivory",
+    "door_ivory_light": "umbral:block/door_ivory_light",
+    "door_ivory_shade": "umbral:block/door_ivory_shade",
+    "door_gasket": "umbral:block/door_gasket",
+    "steel": "umbral:block/metal_steel",
+    "gasket": "umbral:block/metal_gasket",
+    "ivory_light": "umbral:block/metal_ivory_light",
+    "ivory_shade": "umbral:block/metal_ivory_shade",
+    "gold": "umbral:block/metal_gold",
+    "status": "umbral:block/amber",
+    "display": "umbral:block/display_off",
+    "optic": "umbral:block/sensor_lens",
+    "particle": "umbral:block/metal_graphite"
+  },
+  "elements": [
+    {
+      "name": "bastidor",
+      "from": [
+        1.04,
+        0.25,
+        1.04
+      ],
+      "to": [
+        14.96,
+        3.3,
+        14.96
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            13.920000000000002,
+            3.05
+          ],
+          "texture": "#graphite"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            13.920000000000002,
+            3.05
+          ],
+          "texture": "#graphite"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            13.920000000000002,
+            3.05
+          ],
+          "texture": "#graphite"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            13.920000000000002,
+            3.05
+          ],
+          "texture": "#graphite"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            13.920000000000002,
+            13.920000000000002
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            13.920000000000002,
+            13.920000000000002
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "abrazadera_1_1",
+      "from": [
+        1,
+        0.2,
+        1
+      ],
+      "to": [
+        3.5,
+        3.6,
+        3.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            2.5
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            2.5
+          ],
+          "texture": "#copper"
+        }
+      }
+    },
+    {
+      "name": "pie_1_1",
+      "from": [
+        1.25,
+        0,
+        1.25
+      ],
+      "to": [
+        3.25,
+        0.2,
+        3.25
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            2.0
+          ],
+          "texture": "#gasket"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            2.0
+          ],
+          "texture": "#gasket"
+        }
+      }
+    },
+    {
+      "name": "perno_1",
+      "from": [
+        1.85,
+        1.45,
+        0.9
+      ],
+      "to": [
+        2.65,
+        2.25,
+        1
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999998,
+            0.8
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999998,
+            0.8
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.09999999999999998,
+            0.8
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.09999999999999998,
+            0.8
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999998,
+            0.09999999999999998
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.7999999999999998,
+            0.09999999999999998
+          ],
+          "texture": "#steel"
+        }
+      }
+    },
+    {
+      "name": "abrazadera_1_12.5",
+      "from": [
+        1,
+        0.2,
+        12.5
+      ],
+      "to": [
+        3.5,
+        3.6,
+        15.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            2.5
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            2.5
+          ],
+          "texture": "#copper"
+        }
+      }
+    },
+    {
+      "name": "pie_1_12.5",
+      "from": [
+        1.25,
+        0,
+        12.75
+      ],
+      "to": [
+        3.25,
+        0.2,
+        14.75
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            2.0
+          ],
+          "texture": "#gasket"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            2.0
+          ],
+          "texture": "#gasket"
+        }
+      }
+    },
+    {
+      "name": "abrazadera_12.5_1",
+      "from": [
+        12.5,
+        0.2,
+        1
+      ],
+      "to": [
+        15.0,
+        3.6,
+        3.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            2.5
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            2.5
+          ],
+          "texture": "#copper"
+        }
+      }
+    },
+    {
+      "name": "pie_12.5_1",
+      "from": [
+        12.75,
+        0,
+        1.25
+      ],
+      "to": [
+        14.75,
+        0.2,
+        3.25
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            2.0
+          ],
+          "texture": "#gasket"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            2.0
+          ],
+          "texture": "#gasket"
+        }
+      }
+    },
+    {
+      "name": "perno_12.5",
+      "from": [
+        13.35,
+        1.45,
+        0.9
+      ],
+      "to": [
+        14.15,
+        2.25,
+        1
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.8000000000000007,
+            0.8
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.8000000000000007,
+            0.8
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.09999999999999998,
+            0.8
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.09999999999999998,
+            0.8
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.8000000000000007,
+            0.09999999999999998
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.8000000000000007,
+            0.09999999999999998
+          ],
+          "texture": "#steel"
+        }
+      }
+    },
+    {
+      "name": "abrazadera_12.5_12.5",
+      "from": [
+        12.5,
+        0.2,
+        12.5
+      ],
+      "to": [
+        15.0,
+        3.6,
+        15.0
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            3.4
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            2.5
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2.5,
+            2.5
+          ],
+          "texture": "#copper"
+        }
+      }
+    },
+    {
+      "name": "pie_12.5_12.5",
+      "from": [
+        12.75,
+        0,
+        12.75
+      ],
+      "to": [
+        14.75,
+        0.2,
+        14.75
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            0.2
+          ],
+          "texture": "#gasket"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            2.0
+          ],
+          "texture": "#gasket"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            2.0,
+            2.0
+          ],
+          "texture": "#gasket"
+        }
+      }
+    },
+    {
+      "name": "marco_piloto_6.1",
+      "from": [
+        6.1,
+        1.1,
+        0.9
+      ],
+      "to": [
+        7.5,
+        2.4,
+        1
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.4000000000000004,
+            1.2999999999999998
+          ],
+          "texture": "#gasket"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.4000000000000004,
+            1.2999999999999998
+          ],
+          "texture": "#gasket"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.09999999999999998,
+            1.2999999999999998
+          ],
+          "texture": "#gasket"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.09999999999999998,
+            1.2999999999999998
+          ],
+          "texture": "#gasket"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.4000000000000004,
+            0.09999999999999998
+          ],
+          "texture": "#gasket"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.4000000000000004,
+            0.09999999999999998
+          ],
+          "texture": "#gasket"
+        }
+      }
+    },
+    {
+      "name": "piloto_6.1",
+      "from": [
+        6.3,
+        1.3,
+        0.84
+      ],
+      "to": [
+        7.3,
+        2.2,
+        0.9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            0.9000000000000001
+          ],
+          "texture": "#status"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            0.9000000000000001
+          ],
+          "texture": "#status"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.06000000000000005,
+            0.9000000000000001
+          ],
+          "texture": "#status"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.06000000000000005,
+            0.9000000000000001
+          ],
+          "texture": "#status"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            0.06000000000000005
+          ],
+          "texture": "#status"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            0.06000000000000005
+          ],
+          "texture": "#status"
+        }
+      }
+    },
+    {
+      "name": "marco_piloto_8.5",
+      "from": [
+        8.5,
+        1.1,
+        0.9
+      ],
+      "to": [
+        9.9,
+        2.4,
+        1
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.4000000000000004,
+            1.2999999999999998
+          ],
+          "texture": "#gasket"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.4000000000000004,
+            1.2999999999999998
+          ],
+          "texture": "#gasket"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.09999999999999998,
+            1.2999999999999998
+          ],
+          "texture": "#gasket"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.09999999999999998,
+            1.2999999999999998
+          ],
+          "texture": "#gasket"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.4000000000000004,
+            0.09999999999999998
+          ],
+          "texture": "#gasket"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.4000000000000004,
+            0.09999999999999998
+          ],
+          "texture": "#gasket"
+        }
+      }
+    },
+    {
+      "name": "piloto_8.5",
+      "from": [
+        8.7,
+        1.3,
+        0.84
+      ],
+      "to": [
+        9.7,
+        2.2,
+        0.9
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            0.9000000000000001
+          ],
+          "texture": "#status"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            0.9000000000000001
+          ],
+          "texture": "#status"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.06000000000000005,
+            0.9000000000000001
+          ],
+          "texture": "#status"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.06000000000000005,
+            0.9000000000000001
+          ],
+          "texture": "#status"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            0.06000000000000005
+          ],
+          "texture": "#status"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            0.06000000000000005
+          ],
+          "texture": "#status"
+        }
+      }
+    }
+  ]
+}

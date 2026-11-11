@@ -1,0 +1,24 @@
+{
+  "type": "minecraft:block",
+  "pools": [
+    {
+      "rolls": 1,
+      "entries": [
+        {
+          "type": "minecraft:item",
+          "name": "umbral:inventory_scanner",
+          "condition": {
+            "type": "minecraft:match_block",
+            "blocks": "umbral:inventory_scanner",
+            "state": {
+              "part": "base"
+            }
+          }
+        }
+      ],
+      "condition": {
+        "type": "minecraft:survives_explosion"
+      }
+    }
+  ]
+}

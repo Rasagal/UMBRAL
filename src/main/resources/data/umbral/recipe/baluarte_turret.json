@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "ICI",
+    "CBC",
+    "IRI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:copper_ingot",
+    "B": "minecraft:crossbow",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "umbral:baluarte_turret",
+    "count": 1
+  }
+}

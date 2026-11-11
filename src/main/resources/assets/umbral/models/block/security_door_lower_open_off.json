@@ -1,0 +1,789 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": true,
+  "textures": {
+    "graphite": "umbral:block/metal_graphite",
+    "ivory": "umbral:block/metal_ivory",
+    "copper": "umbral:block/metal_copper",
+    "shadow": "umbral:block/shadow",
+    "amethyst": "umbral:block/amethyst",
+    "red": "umbral:block/red",
+    "door_graphite": "umbral:block/door_graphite",
+    "door_copper": "umbral:block/door_copper",
+    "door_steel": "umbral:block/door_steel",
+    "door_ivory": "umbral:block/door_ivory",
+    "door_ivory_light": "umbral:block/door_ivory_light",
+    "door_ivory_shade": "umbral:block/door_ivory_shade",
+    "door_gasket": "umbral:block/door_gasket",
+    "steel": "umbral:block/metal_steel",
+    "gasket": "umbral:block/metal_gasket",
+    "ivory_light": "umbral:block/metal_ivory_light",
+    "ivory_shade": "umbral:block/metal_ivory_shade",
+    "gold": "umbral:block/metal_gold",
+    "status": "umbral:block/amber",
+    "display": "umbral:block/display_off",
+    "optic": "umbral:block/sensor_lens",
+    "particle": "umbral:block/metal_graphite"
+  },
+  "elements": [
+    {
+      "name": "marco_inferior_0",
+      "from": [
+        0,
+        0,
+        5.25
+      ],
+      "to": [
+        2,
+        16,
+        10.75
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            14,
+            0,
+            16,
+            16
+          ],
+          "texture": "#door_graphite"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            2,
+            16
+          ],
+          "texture": "#door_graphite"
+        },
+        "east": {
+          "uv": [
+            5.25,
+            0,
+            10.75,
+            16
+          ],
+          "texture": "#door_graphite"
+        },
+        "west": {
+          "uv": [
+            5.25,
+            0,
+            10.75,
+            16
+          ],
+          "texture": "#door_graphite"
+        },
+        "up": {
+          "uv": [
+            0,
+            5.25,
+            2,
+            10.75
+          ],
+          "texture": "#door_graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            5.25,
+            2,
+            10.75
+          ],
+          "texture": "#door_graphite"
+        }
+      }
+    },
+    {
+      "name": "marco_inferior_1",
+      "from": [
+        14,
+        0,
+        5.25
+      ],
+      "to": [
+        16,
+        16,
+        10.75
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            2,
+            16
+          ],
+          "texture": "#door_graphite"
+        },
+        "south": {
+          "uv": [
+            14,
+            0,
+            16,
+            16
+          ],
+          "texture": "#door_graphite"
+        },
+        "east": {
+          "uv": [
+            5.25,
+            0,
+            10.75,
+            16
+          ],
+          "texture": "#door_graphite"
+        },
+        "west": {
+          "uv": [
+            5.25,
+            0,
+            10.75,
+            16
+          ],
+          "texture": "#door_graphite"
+        },
+        "up": {
+          "uv": [
+            14,
+            5.25,
+            16,
+            10.75
+          ],
+          "texture": "#door_graphite"
+        },
+        "down": {
+          "uv": [
+            14,
+            5.25,
+            16,
+            10.75
+          ],
+          "texture": "#door_graphite"
+        }
+      }
+    },
+    {
+      "name": "marco_inferior_2",
+      "from": [
+        1.5,
+        0,
+        5
+      ],
+      "to": [
+        2.0,
+        16,
+        5.25
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            14.0,
+            0,
+            14.5,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "south": {
+          "uv": [
+            1.5,
+            0,
+            2.0,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "east": {
+          "uv": [
+            10.75,
+            0,
+            11,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "west": {
+          "uv": [
+            5,
+            0,
+            5.25,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "up": {
+          "uv": [
+            1.5,
+            5,
+            2.0,
+            5.25
+          ],
+          "texture": "#door_steel"
+        },
+        "down": {
+          "uv": [
+            1.5,
+            10.75,
+            2.0,
+            11
+          ],
+          "texture": "#door_steel"
+        }
+      }
+    },
+    {
+      "name": "marco_inferior_3",
+      "from": [
+        1.5,
+        0,
+        10.75
+      ],
+      "to": [
+        2.0,
+        16,
+        11
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            14.0,
+            0,
+            14.5,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "south": {
+          "uv": [
+            1.5,
+            0,
+            2.0,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "east": {
+          "uv": [
+            5,
+            0,
+            5.25,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "west": {
+          "uv": [
+            10.75,
+            0,
+            11,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "up": {
+          "uv": [
+            1.5,
+            10.75,
+            2.0,
+            11
+          ],
+          "texture": "#door_steel"
+        },
+        "down": {
+          "uv": [
+            1.5,
+            5,
+            2.0,
+            5.25
+          ],
+          "texture": "#door_steel"
+        }
+      }
+    },
+    {
+      "name": "marco_inferior_4",
+      "from": [
+        14,
+        0,
+        5
+      ],
+      "to": [
+        14.5,
+        16,
+        5.25
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1.5,
+            0,
+            2,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "south": {
+          "uv": [
+            14,
+            0,
+            14.5,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "east": {
+          "uv": [
+            10.75,
+            0,
+            11,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "west": {
+          "uv": [
+            5,
+            0,
+            5.25,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "up": {
+          "uv": [
+            14,
+            5,
+            14.5,
+            5.25
+          ],
+          "texture": "#door_steel"
+        },
+        "down": {
+          "uv": [
+            14,
+            10.75,
+            14.5,
+            11
+          ],
+          "texture": "#door_steel"
+        }
+      }
+    },
+    {
+      "name": "marco_inferior_5",
+      "from": [
+        14,
+        0,
+        10.75
+      ],
+      "to": [
+        14.5,
+        16,
+        11
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            1.5,
+            0,
+            2,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "south": {
+          "uv": [
+            14,
+            0,
+            14.5,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "east": {
+          "uv": [
+            5,
+            0,
+            5.25,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "west": {
+          "uv": [
+            10.75,
+            0,
+            11,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "up": {
+          "uv": [
+            14,
+            10.75,
+            14.5,
+            11
+          ],
+          "texture": "#door_steel"
+        },
+        "down": {
+          "uv": [
+            14,
+            5,
+            14.5,
+            5.25
+          ],
+          "texture": "#door_steel"
+        }
+      }
+    },
+    {
+      "name": "marco_inferior_6",
+      "from": [
+        0,
+        0,
+        5
+      ],
+      "to": [
+        2,
+        2,
+        11
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            14,
+            14,
+            16,
+            16
+          ],
+          "texture": "#door_copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            14,
+            2,
+            16
+          ],
+          "texture": "#door_copper"
+        },
+        "east": {
+          "uv": [
+            5,
+            14,
+            11,
+            16
+          ],
+          "texture": "#door_copper"
+        },
+        "west": {
+          "uv": [
+            5,
+            14,
+            11,
+            16
+          ],
+          "texture": "#door_copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            5,
+            2,
+            11
+          ],
+          "texture": "#door_copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            5,
+            2,
+            11
+          ],
+          "texture": "#door_copper"
+        }
+      }
+    },
+    {
+      "name": "marco_inferior_7",
+      "from": [
+        0.65,
+        0.65,
+        4.85
+      ],
+      "to": [
+        1.35,
+        1.35,
+        5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            14.65,
+            14.65,
+            15.35,
+            15.35
+          ],
+          "texture": "#door_steel"
+        },
+        "south": {
+          "uv": [
+            0.65,
+            14.65,
+            1.35,
+            15.35
+          ],
+          "texture": "#door_steel"
+        },
+        "east": {
+          "uv": [
+            11,
+            14.65,
+            11.15,
+            15.35
+          ],
+          "texture": "#door_steel"
+        },
+        "west": {
+          "uv": [
+            4.85,
+            14.65,
+            5,
+            15.35
+          ],
+          "texture": "#door_steel"
+        },
+        "up": {
+          "uv": [
+            0.65,
+            4.85,
+            1.35,
+            5
+          ],
+          "texture": "#door_steel"
+        },
+        "down": {
+          "uv": [
+            0.65,
+            11,
+            1.35,
+            11.15
+          ],
+          "texture": "#door_steel"
+        }
+      }
+    },
+    {
+      "name": "marco_inferior_8",
+      "from": [
+        14,
+        0,
+        5
+      ],
+      "to": [
+        16,
+        2,
+        11
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            14,
+            2,
+            16
+          ],
+          "texture": "#door_copper"
+        },
+        "south": {
+          "uv": [
+            14,
+            14,
+            16,
+            16
+          ],
+          "texture": "#door_copper"
+        },
+        "east": {
+          "uv": [
+            5,
+            14,
+            11,
+            16
+          ],
+          "texture": "#door_copper"
+        },
+        "west": {
+          "uv": [
+            5,
+            14,
+            11,
+            16
+          ],
+          "texture": "#door_copper"
+        },
+        "up": {
+          "uv": [
+            14,
+            5,
+            16,
+            11
+          ],
+          "texture": "#door_copper"
+        },
+        "down": {
+          "uv": [
+            14,
+            5,
+            16,
+            11
+          ],
+          "texture": "#door_copper"
+        }
+      }
+    },
+    {
+      "name": "marco_inferior_9",
+      "from": [
+        14.65,
+        0.65,
+        4.85
+      ],
+      "to": [
+        15.35,
+        1.35,
+        5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0.6500000000000004,
+            14.65,
+            1.3499999999999996,
+            15.35
+          ],
+          "texture": "#door_steel"
+        },
+        "south": {
+          "uv": [
+            14.65,
+            14.65,
+            15.35,
+            15.35
+          ],
+          "texture": "#door_steel"
+        },
+        "east": {
+          "uv": [
+            11,
+            14.65,
+            11.15,
+            15.35
+          ],
+          "texture": "#door_steel"
+        },
+        "west": {
+          "uv": [
+            4.85,
+            14.65,
+            5,
+            15.35
+          ],
+          "texture": "#door_steel"
+        },
+        "up": {
+          "uv": [
+            14.65,
+            4.85,
+            15.35,
+            5
+          ],
+          "texture": "#door_steel"
+        },
+        "down": {
+          "uv": [
+            14.65,
+            11,
+            15.35,
+            11.15
+          ],
+          "texture": "#door_steel"
+        }
+      }
+    },
+    {
+      "name": "suelo_cable",
+      "from": [
+        0,
+        0,
+        0
+      ],
+      "to": [
+        16,
+        0.5,
+        16
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            16,
+            0.5
+          ],
+          "texture": "#door_steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            16,
+            0.5
+          ],
+          "texture": "#door_steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            16,
+            0.5
+          ],
+          "texture": "#door_steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            16,
+            0.5
+          ],
+          "texture": "#door_steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#door_steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            16,
+            16
+          ],
+          "texture": "#door_steel"
+        }
+      }
+    }
+  ]
+}

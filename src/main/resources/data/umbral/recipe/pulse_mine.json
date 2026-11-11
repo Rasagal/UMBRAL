@@ -1,0 +1,18 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "CRC",
+    "IAI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:copper_ingot",
+    "A": "minecraft:amethyst_shard",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "umbral:pulse_mine",
+    "count": 1
+  }
+}

@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "ICI",
+    "CDC",
+    "IRI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:copper_ingot",
+    "D": "minecraft:dispenser",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "umbral:centella_turret",
+    "count": 1
+  }
+}

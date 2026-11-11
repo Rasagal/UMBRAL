@@ -1,0 +1,132 @@
+{
+  "variants": {
+    "facing=north,online=false,metal=empty": {
+      "model": "umbral:block/centella_base_off",
+      "y": 0
+    },
+    "facing=east,online=false,metal=empty": {
+      "model": "umbral:block/centella_base_off",
+      "y": 90
+    },
+    "facing=south,online=false,metal=empty": {
+      "model": "umbral:block/centella_base_off",
+      "y": 180
+    },
+    "facing=west,online=false,metal=empty": {
+      "model": "umbral:block/centella_base_off",
+      "y": 270
+    },
+    "facing=north,online=false,metal=copper": {
+      "model": "umbral:block/centella_base_off",
+      "y": 0
+    },
+    "facing=east,online=false,metal=copper": {
+      "model": "umbral:block/centella_base_off",
+      "y": 90
+    },
+    "facing=south,online=false,metal=copper": {
+      "model": "umbral:block/centella_base_off",
+      "y": 180
+    },
+    "facing=west,online=false,metal=copper": {
+      "model": "umbral:block/centella_base_off",
+      "y": 270
+    },
+    "facing=north,online=false,metal=iron": {
+      "model": "umbral:block/centella_base_off",
+      "y": 0
+    },
+    "facing=east,online=false,metal=iron": {
+      "model": "umbral:block/centella_base_off",
+      "y": 90
+    },
+    "facing=south,online=false,metal=iron": {
+      "model": "umbral:block/centella_base_off",
+      "y": 180
+    },
+    "facing=west,online=false,metal=iron": {
+      "model": "umbral:block/centella_base_off",
+      "y": 270
+    },
+    "facing=north,online=false,metal=gold": {
+      "model": "umbral:block/centella_base_off",
+      "y": 0
+    },
+    "facing=east,online=false,metal=gold": {
+      "model": "umbral:block/centella_base_off",
+      "y": 90
+    },
+    "facing=south,online=false,metal=gold": {
+      "model": "umbral:block/centella_base_off",
+      "y": 180
+    },
+    "facing=west,online=false,metal=gold": {
+      "model": "umbral:block/centella_base_off",
+      "y": 270
+    },
+    "facing=north,online=true,metal=empty": {
+      "model": "umbral:block/centella_base_on",
+      "y": 0
+    },
+    "facing=east,online=true,metal=empty": {
+      "model": "umbral:block/centella_base_on",
+      "y": 90
+    },
+    "facing=south,online=true,metal=empty": {
+      "model": "umbral:block/centella_base_on",
+      "y": 180
+    },
+    "facing=west,online=true,metal=empty": {
+      "model": "umbral:block/centella_base_on",
+      "y": 270
+    },
+    "facing=north,online=true,metal=copper": {
+      "model": "umbral:block/centella_base_on",
+      "y": 0
+    },
+    "facing=east,online=true,metal=copper": {
+      "model": "umbral:block/centella_base_on",
+      "y": 90
+    },
+    "facing=south,online=true,metal=copper": {
+      "model": "umbral:block/centella_base_on",
+      "y": 180
+    },
+    "facing=west,online=true,metal=copper": {
+      "model": "umbral:block/centella_base_on",
+      "y": 270
+    },
+    "facing=north,online=true,metal=iron": {
+      "model": "umbral:block/centella_base_on",
+      "y": 0
+    },
+    "facing=east,online=true,metal=iron": {
+      "model": "umbral:block/centella_base_on",
+      "y": 90
+    },
+    "facing=south,online=true,metal=iron": {
+      "model": "umbral:block/centella_base_on",
+      "y": 180
+    },
+    "facing=west,online=true,metal=iron": {
+      "model": "umbral:block/centella_base_on",
+      "y": 270
+    },
+    "facing=north,online=true,metal=gold": {
+      "model": "umbral:block/centella_base_on",
+      "y": 0
+    },
+    "facing=east,online=true,metal=gold": {
+      "model": "umbral:block/centella_base_on",
+      "y": 90
+    },
+    "facing=south,online=true,metal=gold": {
+      "model": "umbral:block/centella_base_on",
+      "y": 180
+    },
+    "facing=west,online=true,metal=gold": {
+      "model": "umbral:block/centella_base_on",
+      "y": 270
+    }
+  }
+}

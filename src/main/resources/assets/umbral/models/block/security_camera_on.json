@@ -1,0 +1,721 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": true,
+  "textures": {
+    "graphite": "umbral:block/camera_graphite",
+    "ivory": "umbral:block/camera_ivory",
+    "copper": "umbral:block/camera_copper",
+    "shadow": "umbral:block/shadow",
+    "amethyst": "umbral:block/amethyst",
+    "red": "umbral:block/red",
+    "door_graphite": "umbral:block/door_graphite",
+    "door_copper": "umbral:block/door_copper",
+    "door_steel": "umbral:block/door_steel",
+    "door_ivory": "umbral:block/door_ivory",
+    "door_ivory_light": "umbral:block/door_ivory_light",
+    "door_ivory_shade": "umbral:block/door_ivory_shade",
+    "door_gasket": "umbral:block/door_gasket",
+    "steel": "umbral:block/metal_steel",
+    "gasket": "umbral:block/metal_gasket",
+    "ivory_light": "umbral:block/metal_ivory_light",
+    "ivory_shade": "umbral:block/metal_ivory_shade",
+    "gold": "umbral:block/metal_gold",
+    "status": "umbral:block/teal",
+    "display": "umbral:block/display_on",
+    "optic": "umbral:block/sensor_lens",
+    "particle": "umbral:block/metal_graphite",
+    "lens": "umbral:block/camera_lens"
+  },
+  "elements": [
+    {
+      "name": "base_montaje_suelo",
+      "from": [
+        5,
+        0,
+        8
+      ],
+      "to": [
+        11,
+        1.5,
+        15
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            7,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            7,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            7
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            7
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "columna_montaje_suelo",
+      "from": [
+        6.5,
+        1.5,
+        10
+      ],
+      "to": [
+        9.5,
+        5,
+        13
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            3.5
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            3.5
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            3,
+            3.5
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            3,
+            3.5
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            3
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            3
+          ],
+          "texture": "#copper"
+        }
+      }
+    },
+    {
+      "name": "rotula_montaje_suelo",
+      "from": [
+        5.5,
+        5,
+        8.5
+      ],
+      "to": [
+        10.5,
+        6.5,
+        13
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            5.0,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            5.0,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4.5,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4.5,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            5.0,
+            4.5
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            5.0,
+            4.5
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "asiento_acero_montaje_suelo",
+      "from": [
+        5.5,
+        5.8,
+        8.5
+      ],
+      "to": [
+        10.5,
+        6.2,
+        13
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            5.0,
+            0.40000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            5.0,
+            0.40000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            4.5,
+            0.40000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            4.5,
+            0.40000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            5.0,
+            4.5
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            5.0,
+            4.5
+          ],
+          "texture": "#steel"
+        }
+      }
+    },
+    {
+      "name": "eje_interno_montaje_suelo",
+      "from": [
+        7.5,
+        6.5,
+        7.7
+      ],
+      "to": [
+        8.5,
+        10,
+        8.3
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            3.5
+          ],
+          "texture": "#graphite"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            3.5
+          ],
+          "texture": "#graphite"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000005,
+            3.5
+          ],
+          "texture": "#graphite"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6000000000000005,
+            3.5
+          ],
+          "texture": "#graphite"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            0.6000000000000005
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            0.6000000000000005
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "puente_eje_montaje_suelo",
+      "from": [
+        6.5,
+        5.3,
+        7.5
+      ],
+      "to": [
+        9.5,
+        6.65,
+        10.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            1.3500000000000005
+          ],
+          "texture": "#graphite"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            1.3500000000000005
+          ],
+          "texture": "#graphite"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            1.3500000000000005
+          ],
+          "texture": "#graphite"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            1.3500000000000005
+          ],
+          "texture": "#graphite"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            3.0
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            3.0
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "tornillo_suelo_5.5_8.5",
+      "from": [
+        5.5,
+        1.5,
+        8.5
+      ],
+      "to": [
+        6.15,
+        1.7,
+        9.15
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        }
+      }
+    },
+    {
+      "name": "tornillo_suelo_5.5_13.7",
+      "from": [
+        5.5,
+        1.5,
+        13.7
+      ],
+      "to": [
+        6.15,
+        1.7,
+        14.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        }
+      }
+    },
+    {
+      "name": "tornillo_suelo_9.8_8.5",
+      "from": [
+        9.8,
+        1.5,
+        8.5
+      ],
+      "to": [
+        10.450000000000001,
+        1.7,
+        9.15
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        }
+      }
+    },
+    {
+      "name": "tornillo_suelo_9.8_13.7",
+      "from": [
+        9.8,
+        1.5,
+        13.7
+      ],
+      "to": [
+        10.450000000000001,
+        1.7,
+        14.35
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.19999999999999996
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        }
+      }
+    }
+  ]
+}

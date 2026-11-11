@@ -1,0 +1,514 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": true,
+  "textures": {
+    "graphite": "umbral:block/camera_graphite",
+    "ivory": "umbral:block/camera_ivory",
+    "copper": "umbral:block/camera_copper",
+    "shadow": "umbral:block/shadow",
+    "amethyst": "umbral:block/amethyst",
+    "red": "umbral:block/red",
+    "door_graphite": "umbral:block/door_graphite",
+    "door_copper": "umbral:block/door_copper",
+    "door_steel": "umbral:block/door_steel",
+    "door_ivory": "umbral:block/door_ivory",
+    "door_ivory_light": "umbral:block/door_ivory_light",
+    "door_ivory_shade": "umbral:block/door_ivory_shade",
+    "door_gasket": "umbral:block/door_gasket",
+    "steel": "umbral:block/metal_steel",
+    "gasket": "umbral:block/metal_gasket",
+    "ivory_light": "umbral:block/metal_ivory_light",
+    "ivory_shade": "umbral:block/metal_ivory_shade",
+    "gold": "umbral:block/metal_gold",
+    "status": "umbral:block/teal",
+    "display": "umbral:block/display_on",
+    "optic": "umbral:block/sensor_lens",
+    "particle": "umbral:block/metal_graphite",
+    "lens": "umbral:block/camera_lens"
+  },
+  "elements": [
+    {
+      "name": "anclaje_montaje_techo",
+      "from": [
+        5,
+        15,
+        11
+      ],
+      "to": [
+        11,
+        16,
+        16
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            6,
+            1
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            6,
+            1
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            5,
+            1
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            5,
+            1
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            6,
+            5
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            6,
+            5
+          ],
+          "texture": "#copper"
+        }
+      }
+    },
+    {
+      "name": "columna_montaje_techo",
+      "from": [
+        6.5,
+        8,
+        14.5
+      ],
+      "to": [
+        9.5,
+        15,
+        16
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            7
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            7
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.5,
+            7
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.5,
+            7
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            1.5
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            1.5
+          ],
+          "texture": "#copper"
+        }
+      }
+    },
+    {
+      "name": "apoyo_trasero_montaje_techo",
+      "from": [
+        6.5,
+        8,
+        13.5
+      ],
+      "to": [
+        9.5,
+        10,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            2
+          ],
+          "texture": "#graphite"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            2
+          ],
+          "texture": "#graphite"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            2
+          ],
+          "texture": "#graphite"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.0,
+            2
+          ],
+          "texture": "#graphite"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            1.0
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            3.0,
+            1.0
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "asiento_acero_montaje_techo",
+      "from": [
+        6,
+        8,
+        13.2
+      ],
+      "to": [
+        10,
+        8.4,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.40000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            4,
+            0.40000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.3000000000000007,
+            0.40000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.3000000000000007,
+            0.40000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            4,
+            1.3000000000000007
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            4,
+            1.3000000000000007
+          ],
+          "texture": "#steel"
+        }
+      }
+    },
+    {
+      "name": "puente_interno_montaje_techo",
+      "from": [
+        7.1,
+        8.8,
+        8
+      ],
+      "to": [
+        8.9,
+        10,
+        14.5
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            1.1999999999999993
+          ],
+          "texture": "#graphite"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            1.1999999999999993
+          ],
+          "texture": "#graphite"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            6.5,
+            1.1999999999999993
+          ],
+          "texture": "#graphite"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            6.5,
+            1.1999999999999993
+          ],
+          "texture": "#graphite"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            6.5
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.8000000000000007,
+            6.5
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "tornillo_techo_5.5",
+      "from": [
+        5.5,
+        14.85,
+        11.5
+      ],
+      "to": [
+        6.15,
+        15,
+        12.15
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.15000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.15000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.15000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.15000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        }
+      }
+    },
+    {
+      "name": "tornillo_techo_9.8",
+      "from": [
+        9.8,
+        14.85,
+        11.5
+      ],
+      "to": [
+        10.450000000000001,
+        15,
+        12.15
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.15000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.15000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.15000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.15000000000000036
+          ],
+          "texture": "#steel"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.6500000000000004,
+            0.6500000000000004
+          ],
+          "texture": "#steel"
+        }
+      }
+    }
+  ]
+}

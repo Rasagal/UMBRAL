@@ -1,0 +1,132 @@
+{
+  "variants": {
+    "facing=north,online=false,armed=false,alarm=false": {
+      "model": "umbral:block/presence_sensor_off",
+      "y": 0
+    },
+    "facing=north,online=false,armed=true,alarm=false": {
+      "model": "umbral:block/presence_sensor_off",
+      "y": 0
+    },
+    "facing=east,online=false,armed=false,alarm=false": {
+      "model": "umbral:block/presence_sensor_off",
+      "y": 90
+    },
+    "facing=east,online=false,armed=true,alarm=false": {
+      "model": "umbral:block/presence_sensor_off",
+      "y": 90
+    },
+    "facing=south,online=false,armed=false,alarm=false": {
+      "model": "umbral:block/presence_sensor_off",
+      "y": 180
+    },
+    "facing=south,online=false,armed=true,alarm=false": {
+      "model": "umbral:block/presence_sensor_off",
+      "y": 180
+    },
+    "facing=west,online=false,armed=false,alarm=false": {
+      "model": "umbral:block/presence_sensor_off",
+      "y": 270
+    },
+    "facing=west,online=false,armed=true,alarm=false": {
+      "model": "umbral:block/presence_sensor_off",
+      "y": 270
+    },
+    "facing=north,online=false,armed=false,alarm=true": {
+      "model": "umbral:block/presence_sensor_off_alarm",
+      "y": 0
+    },
+    "facing=north,online=false,armed=true,alarm=true": {
+      "model": "umbral:block/presence_sensor_off_alarm",
+      "y": 0
+    },
+    "facing=east,online=false,armed=false,alarm=true": {
+      "model": "umbral:block/presence_sensor_off_alarm",
+      "y": 90
+    },
+    "facing=east,online=false,armed=true,alarm=true": {
+      "model": "umbral:block/presence_sensor_off_alarm",
+      "y": 90
+    },
+    "facing=south,online=false,armed=false,alarm=true": {
+      "model": "umbral:block/presence_sensor_off_alarm",
+      "y": 180
+    },
+    "facing=south,online=false,armed=true,alarm=true": {
+      "model": "umbral:block/presence_sensor_off_alarm",
+      "y": 180
+    },
+    "facing=west,online=false,armed=false,alarm=true": {
+      "model": "umbral:block/presence_sensor_off_alarm",
+      "y": 270
+    },
+    "facing=west,online=false,armed=true,alarm=true": {
+      "model": "umbral:block/presence_sensor_off_alarm",
+      "y": 270
+    },
+    "facing=north,online=true,armed=false,alarm=false": {
+      "model": "umbral:block/presence_sensor_on",
+      "y": 0
+    },
+    "facing=north,online=true,armed=true,alarm=false": {
+      "model": "umbral:block/presence_sensor_on",
+      "y": 0
+    },
+    "facing=east,online=true,armed=false,alarm=false": {
+      "model": "umbral:block/presence_sensor_on",
+      "y": 90
+    },
+    "facing=east,online=true,armed=true,alarm=false": {
+      "model": "umbral:block/presence_sensor_on",
+      "y": 90
+    },
+    "facing=south,online=true,armed=false,alarm=false": {
+      "model": "umbral:block/presence_sensor_on",
+      "y": 180
+    },
+    "facing=south,online=true,armed=true,alarm=false": {
+      "model": "umbral:block/presence_sensor_on",
+      "y": 180
+    },
+    "facing=west,online=true,armed=false,alarm=false": {
+      "model": "umbral:block/presence_sensor_on",
+      "y": 270
+    },
+    "facing=west,online=true,armed=true,alarm=false": {
+      "model": "umbral:block/presence_sensor_on",
+      "y": 270
+    },
+    "facing=north,online=true,armed=false,alarm=true": {
+      "model": "umbral:block/presence_sensor_on_alarm",
+      "y": 0
+    },
+    "facing=north,online=true,armed=true,alarm=true": {
+      "model": "umbral:block/presence_sensor_on_alarm",
+      "y": 0
+    },
+    "facing=east,online=true,armed=false,alarm=true": {
+      "model": "umbral:block/presence_sensor_on_alarm",
+      "y": 90
+    },
+    "facing=east,online=true,armed=true,alarm=true": {
+      "model": "umbral:block/presence_sensor_on_alarm",
+      "y": 90
+    },
+    "facing=south,online=true,armed=false,alarm=true": {
+      "model": "umbral:block/presence_sensor_on_alarm",
+      "y": 180
+    },
+    "facing=south,online=true,armed=true,alarm=true": {
+      "model": "umbral:block/presence_sensor_on_alarm",
+      "y": 180
+    },
+    "facing=west,online=true,armed=false,alarm=true": {
+      "model": "umbral:block/presence_sensor_on_alarm",
+      "y": 270
+    },
+    "facing=west,online=true,armed=true,alarm=true": {
+      "model": "umbral:block/presence_sensor_on_alarm",
+      "y": 270
+    }
+  }
+}

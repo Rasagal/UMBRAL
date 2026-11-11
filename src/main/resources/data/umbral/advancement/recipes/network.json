@@ -1,0 +1,43 @@
+{
+  "criteria": {
+    "has_redstone": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:redstone"
+          }
+        ]
+      }
+    }
+  },
+  "requirements": [
+    [
+      "has_redstone"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "umbral:electric_fence",
+      "umbral:inventory_scanner",
+      "umbral:network_core",
+      "umbral:sector_node",
+      "umbral:terminal",
+      "umbral:security_camera",
+      "umbral:copper_cable",
+      "umbral:configurator",
+      "umbral:security_door",
+      "umbral:card_reader",
+      "umbral:access_card",
+      "umbral:protection_matrix",
+      "umbral:presence_sensor",
+      "umbral:pulse_mine",
+      "umbral:nexo_terminal",
+      "umbral:mota_dock",
+      "umbral:mota",
+      "umbral:centella_turret",
+      "umbral:baluarte_turret",
+      "umbral:field_manual"
+    ]
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "variants": {
+    "facing=north,mount=floor,online=false": {
+      "model": "umbral:block/security_camera_off",
+      "y": 0
+    },
+    "facing=east,mount=floor,online=false": {
+      "model": "umbral:block/security_camera_off",
+      "y": 90
+    },
+    "facing=south,mount=floor,online=false": {
+      "model": "umbral:block/security_camera_off",
+      "y": 180
+    },
+    "facing=west,mount=floor,online=false": {
+      "model": "umbral:block/security_camera_off",
+      "y": 270
+    },
+    "facing=north,mount=floor,online=true": {
+      "model": "umbral:block/security_camera_on",
+      "y": 0
+    },
+    "facing=east,mount=floor,online=true": {
+      "model": "umbral:block/security_camera_on",
+      "y": 90
+    },
+    "facing=south,mount=floor,online=true": {
+      "model": "umbral:block/security_camera_on",
+      "y": 180
+    },
+    "facing=west,mount=floor,online=true": {
+      "model": "umbral:block/security_camera_on",
+      "y": 270
+    },
+    "facing=north,mount=wall,online=false": {
+      "model": "umbral:block/security_camera_wall_off",
+      "y": 0
+    },
+    "facing=east,mount=wall,online=false": {
+      "model": "umbral:block/security_camera_wall_off",
+      "y": 90
+    },
+    "facing=south,mount=wall,online=false": {
+      "model": "umbral:block/security_camera_wall_off",
+      "y": 180
+    },
+    "facing=west,mount=wall,online=false": {
+      "model": "umbral:block/security_camera_wall_off",
+      "y": 270
+    },
+    "facing=north,mount=wall,online=true": {
+      "model": "umbral:block/security_camera_wall_on",
+      "y": 0
+    },
+    "facing=east,mount=wall,online=true": {
+      "model": "umbral:block/security_camera_wall_on",
+      "y": 90
+    },
+    "facing=south,mount=wall,online=true": {
+      "model": "umbral:block/security_camera_wall_on",
+      "y": 180
+    },
+    "facing=west,mount=wall,online=true": {
+      "model": "umbral:block/security_camera_wall_on",
+      "y": 270
+    },
+    "facing=north,mount=ceiling,online=false": {
+      "model": "umbral:block/security_camera_ceiling_off",
+      "y": 0
+    },
+    "facing=east,mount=ceiling,online=false": {
+      "model": "umbral:block/security_camera_ceiling_off",
+      "y": 90
+    },
+    "facing=south,mount=ceiling,online=false": {
+      "model": "umbral:block/security_camera_ceiling_off",
+      "y": 180
+    },
+    "facing=west,mount=ceiling,online=false": {
+      "model": "umbral:block/security_camera_ceiling_off",
+      "y": 270
+    },
+    "facing=north,mount=ceiling,online=true": {
+      "model": "umbral:block/security_camera_ceiling_on",
+      "y": 0
+    },
+    "facing=east,mount=ceiling,online=true": {
+      "model": "umbral:block/security_camera_ceiling_on",
+      "y": 90
+    },
+    "facing=south,mount=ceiling,online=true": {
+      "model": "umbral:block/security_camera_ceiling_on",
+      "y": 180
+    },
+    "facing=west,mount=ceiling,online=true": {
+      "model": "umbral:block/security_camera_ceiling_on",
+      "y": 270
+    }
+  }
+}

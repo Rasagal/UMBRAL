@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "CIC",
+    "FRF",
+    "IAI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:copper_ingot",
+    "R": "minecraft:redstone",
+    "F": "minecraft:feather",
+    "A": "minecraft:amethyst_shard"
+  },
+  "result": {
+    "id": "umbral:mota",
+    "count": 1
+  }
+}

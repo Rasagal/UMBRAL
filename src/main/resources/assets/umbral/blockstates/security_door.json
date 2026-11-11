@@ -1,0 +1,132 @@
+{
+  "variants": {
+    "facing=north,half=lower,online=false,open=false": {
+      "model": "umbral:block/security_door_lower_closed_off",
+      "y": 0
+    },
+    "facing=east,half=lower,online=false,open=false": {
+      "model": "umbral:block/security_door_lower_closed_off",
+      "y": 90
+    },
+    "facing=south,half=lower,online=false,open=false": {
+      "model": "umbral:block/security_door_lower_closed_off",
+      "y": 180
+    },
+    "facing=west,half=lower,online=false,open=false": {
+      "model": "umbral:block/security_door_lower_closed_off",
+      "y": 270
+    },
+    "facing=north,half=lower,online=false,open=true": {
+      "model": "umbral:block/security_door_lower_open_off",
+      "y": 0
+    },
+    "facing=east,half=lower,online=false,open=true": {
+      "model": "umbral:block/security_door_lower_open_off",
+      "y": 90
+    },
+    "facing=south,half=lower,online=false,open=true": {
+      "model": "umbral:block/security_door_lower_open_off",
+      "y": 180
+    },
+    "facing=west,half=lower,online=false,open=true": {
+      "model": "umbral:block/security_door_lower_open_off",
+      "y": 270
+    },
+    "facing=north,half=upper,online=false,open=false": {
+      "model": "umbral:block/security_door_upper_closed_off",
+      "y": 0
+    },
+    "facing=east,half=upper,online=false,open=false": {
+      "model": "umbral:block/security_door_upper_closed_off",
+      "y": 90
+    },
+    "facing=south,half=upper,online=false,open=false": {
+      "model": "umbral:block/security_door_upper_closed_off",
+      "y": 180
+    },
+    "facing=west,half=upper,online=false,open=false": {
+      "model": "umbral:block/security_door_upper_closed_off",
+      "y": 270
+    },
+    "facing=north,half=upper,online=false,open=true": {
+      "model": "umbral:block/security_door_upper_open_off",
+      "y": 0
+    },
+    "facing=east,half=upper,online=false,open=true": {
+      "model": "umbral:block/security_door_upper_open_off",
+      "y": 90
+    },
+    "facing=south,half=upper,online=false,open=true": {
+      "model": "umbral:block/security_door_upper_open_off",
+      "y": 180
+    },
+    "facing=west,half=upper,online=false,open=true": {
+      "model": "umbral:block/security_door_upper_open_off",
+      "y": 270
+    },
+    "facing=north,half=lower,online=true,open=false": {
+      "model": "umbral:block/security_door_lower_closed_on",
+      "y": 0
+    },
+    "facing=east,half=lower,online=true,open=false": {
+      "model": "umbral:block/security_door_lower_closed_on",
+      "y": 90
+    },
+    "facing=south,half=lower,online=true,open=false": {
+      "model": "umbral:block/security_door_lower_closed_on",
+      "y": 180
+    },
+    "facing=west,half=lower,online=true,open=false": {
+      "model": "umbral:block/security_door_lower_closed_on",
+      "y": 270
+    },
+    "facing=north,half=lower,online=true,open=true": {
+      "model": "umbral:block/security_door_lower_open_on",
+      "y": 0
+    },
+    "facing=east,half=lower,online=true,open=true": {
+      "model": "umbral:block/security_door_lower_open_on",
+      "y": 90
+    },
+    "facing=south,half=lower,online=true,open=true": {
+      "model": "umbral:block/security_door_lower_open_on",
+      "y": 180
+    },
+    "facing=west,half=lower,online=true,open=true": {
+      "model": "umbral:block/security_door_lower_open_on",
+      "y": 270
+    },
+    "facing=north,half=upper,online=true,open=false": {
+      "model": "umbral:block/security_door_upper_closed_on",
+      "y": 0
+    },
+    "facing=east,half=upper,online=true,open=false": {
+      "model": "umbral:block/security_door_upper_closed_on",
+      "y": 90
+    },
+    "facing=south,half=upper,online=true,open=false": {
+      "model": "umbral:block/security_door_upper_closed_on",
+      "y": 180
+    },
+    "facing=west,half=upper,online=true,open=false": {
+      "model": "umbral:block/security_door_upper_closed_on",
+      "y": 270
+    },
+    "facing=north,half=upper,online=true,open=true": {
+      "model": "umbral:block/security_door_upper_open_on",
+      "y": 0
+    },
+    "facing=east,half=upper,online=true,open=true": {
+      "model": "umbral:block/security_door_upper_open_on",
+      "y": 90
+    },
+    "facing=south,half=upper,online=true,open=true": {
+      "model": "umbral:block/security_door_upper_open_on",
+      "y": 180
+    },
+    "facing=west,half=upper,online=true,open=true": {
+      "model": "umbral:block/security_door_upper_open_on",
+      "y": 270
+    }
+  }
+}

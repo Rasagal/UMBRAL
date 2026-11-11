@@ -1,0 +1,9 @@
+{
+  "minecraft": "26.3",
+  "source": "Required client JVM arguments in the official Minecraft 26.3 version metadata; launcher paths and user GC/heap preferences are handled separately.",
+  "arguments": [
+    "-XX:StackShadowPages=32",
+    "--enable-native-access=ALL-UNNAMED",
+    "--add-exports=java.base/jdk.internal.misc=ALL-UNNAMED"
+  ]
+}

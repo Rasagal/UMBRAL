@@ -1,0 +1,73 @@
+// SPDX-License-Identifier: MPL-2.0
+
+package dev.umbral.test;
+
+import com.mojang.blaze3d.platform.InputConstants;
+import dev.umbral.UmbralContent;
+import dev.umbral.client.ProtectionScreen;
+import dev.umbral.protection.*;
+import net.fabricmc.fabric.api.client.gametest.v1.*;
+import net.fabricmc.fabric.api.client.gametest.v1.context.ClientGameTestContext;
+import net.fabricmc.fabric.api.client.gametest.v1.screenshot.TestScreenshotOptions;
+import net.minecraft.client.gui.components.*;
+import net.minecraft.core.BlockPos;
+import net.minecraft.world.InteractionHand;
+import net.minecraft.world.item.*;
+import net.minecraft.world.level.block.Blocks;
+import net.minecraft.world.phys.Vec3;
+import java.lang.reflect.Field;
+import java.nio.file.*;
+import java.util.*;
+
+@SuppressWarnings("UnstableApiUsage")
+public final class ProtectionUsabilityClientGameTest implements FabricClientGameTest {
+    private static final Path OUTPUT=Path.of("../../visual-checks/1.6.1");
+    private static void check(boolean yes,String message){if(!yes)throw new AssertionError(message);}
+    private static Object field(Object value,String name){try{Field f=value.getClass().getDeclaredField(name);f.setAccessible(true);return f.get(value);}catch(ReflectiveOperationException e){throw new RuntimeException(e);}}
+    private static void click(ClientGameTestContext c,String key){c.waitFor(mc->mc.gui.screen()!=null&&mc.gui.screen().children().stream().anyMatch(v->v instanceof Button b&&b.active&&b.getMessage().getString().equals(net.minecraft.network.chat.Component.translatable(key).getString())));c.clickScreenButton(key);c.waitTicks(6);}
+    private static void capture(ClientGameTestContext c,String name){c.getInput().setCursorPos(2,2);c.waitTicks(3);c.takeScreenshot(TestScreenshotOptions.of(name).disableCounterPrefix().withDestinationDir(OUTPUT));}
+    private static void layout(ClientGameTestContext c){c.runOnClient(mc->{var s=mc.gui.screen();var buttons=s.children().stream().filter(v->v instanceof Button).map(v->(Button)v).toList();for(var a:buttons){check(a.getX()>=0&&a.getY()>=0&&a.getRight()<=s.width&&a.getBottom()<=s.height,"Guided controls fit the viewport");for(var b:buttons)if(a!=b)check(a.getRight()<=b.getX()||b.getRight()<=a.getX()||a.getBottom()<=b.getY()||b.getBottom()<=a.getY(),"Guided buttons never overlap");}});}
+    private static void aim(ClientGameTestContext c,Vec3 target){var angles=c.computeOnClient(mc->{var v=target.subtract(mc.player.getEyePosition());return new float[]{(float)Math.toDegrees(Math.atan2(-v.x,v.z)),(float)-Math.toDegrees(Math.atan2(v.y,v.horizontalDistance()))};});c.getInput().lookAt(angles[0],angles[1]);}
+    private static void review(ClientGameTestContext c){click(c,"protection.umbral.review");c.waitFor(mc->mc.gui.screen()!=null&&mc.gui.screen().getClass().getSimpleName().equals("Review"));layout(c);}
+    private static void confirm(ClientGameTestContext c){click(c,"protection.umbral.confirm");c.waitForScreen(ProtectionScreen.class);c.waitTicks(4);}
+    private static void height(ClientGameTestContext c,String key,int floor,int ceiling){click(c,key);c.runOnClient(mc->{var boxes=mc.gui.screen().children().stream().filter(v->v instanceof EditBox).map(v->(EditBox)v).toList();boxes.get(0).setValue(Integer.toString(floor));boxes.get(1).setValue(Integer.toString(ceiling));});click(c,"protection.umbral.apply");}
+    private static boolean button(ClientGameTestContext c,String key){return c.computeOnClient(mc->mc.gui.screen().children().stream().anyMatch(v->v instanceof Button b&&b.getMessage().getString().equals(net.minecraft.network.chat.Component.translatable(key).getString())));}
+    private static boolean enabled(ClientGameTestContext c,String key){return c.computeOnClient(mc->mc.gui.screen().children().stream().anyMatch(v->v instanceof Button b&&b.active&&b.getMessage().getString().equals(net.minecraft.network.chat.Component.translatable(key).getString())));}
+    private static double[] point(ClientGameTestContext c,double wx,double wz){return c.computeOnClient(mc->{var s=mc.gui.screen();var map=field(s,"map");double scale=Math.min((int)field(s,"mw"),(int)field(s,"mh"))/(double)(int)field(map,"cells"),factor=mc.getWindow().getGuiScale();return new double[]{((int)field(s,"mx")+(int)field(s,"mw")/2d+(wx-(double)field(map,"centerX"))*scale)*factor,((int)field(s,"my")+(int)field(s,"mh")/2d+(wz-(double)field(map,"centerZ"))*scale)*factor};});}
+    private static void rectangle(ClientGameTestContext c,int x0,int z0,int x1,int z1){var a=point(c,x0+.2,z0+.2);var b=point(c,x1+.8,z1+.8);c.getInput().setCursorPos(a[0],a[1]);c.getInput().holdMouse(0);c.waitTicks(1);c.getInput().moveCursor(b[0]-a[0],b[1]-a[1]);c.waitTicks(2);c.getInput().releaseMouse(0);c.waitTicks(3);}
+    @Override public void runTest(ClientGameTestContext c){
+        c.waitFor(mc->mc.gui.overlay()==null,1000);c.getInput().resizeWindow(1280,800);var spanish=c.computeOnClient(mc->{mc.options.guiScale().set(2);mc.resizeGui();mc.options.renderDistance().set(4);mc.getLanguageManager().setSelected("es_es");mc.options.languageCode="es_es";return mc.reloadResourcePacks();});c.waitFor(mc->spanish.isDone()&&mc.gui.overlay()==null,1000);
+        try(var world=c.worldBuilder().create()){
+            var conn=world.getConnection();world.getServer().runCommand("gamemode creative @a");world.getServer().runCommand("time set day");
+            world.getServer().runOnServer(server->{var level=conn.getServerLevel();var p=conn.getServerPlayer();for(int x=-12;x<=40;x++)for(int z=-12;z<=18;z++)level.setBlockAndUpdate(new BlockPos(x,-61,z),Blocks.SMOOTH_STONE.defaultBlockState());for(int x=-4;x<=2;x++)for(int z=-2;z<=4;z++)for(int y=-60;y<=-56;y++)if(x==-4||x==2||z==-2||z==4||y==-56)level.setBlockAndUpdate(new BlockPos(x,y,z),(y==-56?Blocks.DARK_OAK_PLANKS:Blocks.QUARTZ_BLOCK).defaultBlockState());p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(UmbralContent.CONFIGURATOR));p.getInventory().setItem(1,new ItemStack(UmbralContent.PROTECTION_MATRIX,2));});
+            world.getServer().runCommand("tp @a -6 -60 -4 0 0");conn.waitForClientboundPackets();c.getInput().lookAt(180,-60);c.getInput().pressKey(o->o.keyUse);c.waitForScreen(ProtectionScreen.class);if(button(c,"protection.umbral.simple"))click(c,"protection.umbral.simple");layout(c);
+            c.runOnClient(mc->check(mc.gui.screen().children().stream().filter(v->v instanceof Button).count()<=5,"New players see only the guided entry actions"));capture(c,"umbral-guided-welcome");click(c,"protection.umbral.recipe");layout(c);capture(c,"umbral-guided-recipe");click(c,"protection.umbral.back");
+            c.getInput().resizeWindow(640,480);c.waitTicks(3);layout(c);capture(c,"umbral-guided-welcome-small");c.getInput().resizeWindow(1280,800);c.waitTicks(3);
+            click(c,"protection.umbral.protect_base");c.waitForScreen(null);c.getInput().lookAt(180,-60);c.getInput().holdShift();c.waitTicks(3);c.getInput().pressKey(o->o.keyUse);c.waitForScreen(ProtectionScreen.class);c.getInput().releaseShift();c.waitTicks(3);capture(c,"umbral-guided-cancelled");world.getServer().runOnServer(server->{var p=conn.getServerPlayer();check(!ProtectionSelections.active(p.getUUID())&&ProtectionData.get(conn.getServerLevel()).owned(p.getUUID()).isEmpty()&&p.getInventory().getItem(1).getCount()==2,"Guided marking can be cancelled without a second corner or a payment");});
+            click(c,"protection.umbral.protect_base");c.waitForScreen(null);
+            world.getServer().runCommand("tp @a -6.5 -60 -4.5 0 0");conn.waitForClientboundPackets();c.waitTicks(3);aim(c,new Vec3(-4.5,-60.98,-2.5));c.getInput().pressKey(o->o.keyUse);c.waitTicks(5);
+            world.getServer().runCommand("tp @a 4.5 -60 6.5 0 0");conn.waitForClientboundPackets();c.waitTicks(3);aim(c,new Vec3(3.5,-60.98,5.5));c.getInput().pressKey(o->o.keyUse);c.waitForScreen(ProtectionScreen.class);layout(c);capture(c,"umbral-guided-first-draft");
+            world.getServer().runOnServer(server->{var p=conn.getServerPlayer();var d=ProtectionData.get(conn.getServerLevel());var pending=ProtectionSelections.draft(p).base();check(d.owned(p.getUUID()).isEmpty()&&d.matrices(p.getUUID())==0&&p.getInventory().getItem(1).getCount()==2,"Marking and preview never claim land or consume materials");check(pending.bounds().y1()-pending.bounds().y0()>=16&&pending.contains(0,-56,1),"Two ground corners cover the real house roof with the suggested height");});
+            review(c);capture(c,"umbral-guided-first-review");confirm(c);
+            ProtectionShape original=world.getServer().computeOnServer(server->{var p=conn.getServerPlayer();var d=ProtectionData.get(conn.getServerLevel());check(d.matrices(p.getUUID())==1&&p.getInventory().getItem(1).getCount()==1&&d.owned(p.getUUID()).size()==1,"One confirmation purchases one physical matrix and protects the named base");return d.owned(p.getUUID()).getFirst().shape();});
+            capture(c,"umbral-guided-active");c.runOnClient(mc->check(mc.gui.screen().children().stream().filter(v->v instanceof Button).count()<=12,"Everyday management keeps advanced geometry out of the basic toolbar"));
+            c.getInput().pressKey(InputConstants.KEY_ESCAPE);c.waitForScreen(null);
+            world.getServer().runOnServer(server->conn.getServerPlayer().setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(Items.OAK_PLANKS,2)));world.getServer().runCommand("tp @a 7.5 -60 1.5 0 0");conn.waitForClientboundPackets();c.waitTicks(4);aim(c,new Vec3(6.5,-60.98,2.5));c.getInput().pressKey(o->o.keyUse);c.waitTicks(60);capture(c,"umbral-guided-outside-notice");
+            world.getServer().runOnServer(server->{var p=conn.getServerPlayer();check(ProtectionSuggestions.hints(p).size()==1&&conn.getServerLevel().getBlockState(new BlockPos(6,-60,2)).is(Blocks.OAK_PLANKS),"Actual client placement outside the area creates one factual construction hint");p.setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(UmbralContent.CONFIGURATOR));});conn.waitForClientboundPackets();c.getInput().lookAt(180,-60);c.getInput().pressKey(o->o.keyUse);c.waitForScreen(ProtectionScreen.class);
+            click(c,"protection.umbral.expand");c.waitForScreen(null);
+            world.getServer().runCommand("tp @a 5.5 -60 -1.5 0 0");conn.waitForClientboundPackets();c.waitTicks(3);aim(c,new Vec3(4.5,-60.98,.5));c.getInput().pressKey(o->o.keyUse);c.waitTicks(4);
+            world.getServer().runCommand("tp @a 9.5 -60 6.5 0 0");conn.waitForClientboundPackets();c.waitTicks(3);aim(c,new Vec3(8.5,-60.98,5.5));c.getInput().pressKey(o->o.keyUse);c.waitForScreen(ProtectionScreen.class);
+            height(c,"protection.umbral.height_addition",-62,-45);c.waitForScreen(ProtectionScreen.class);capture(c,"umbral-guided-extension");
+            Path flag=OUTPUT.resolve("guided-recording.flag");try{Files.createDirectories(OUTPUT);Files.writeString(flag,"UMBRAL guided area expansion with one confirmation");}catch(java.io.IOException e){throw new RuntimeException(e);}
+            try{c.waitTicks(14);review(c);c.waitTicks(20);capture(c,"umbral-guided-extension-review");confirm(c);c.waitTicks(20);capture(c,"umbral-guided-extension-saved");}finally{try{Files.deleteIfExists(flag);}catch(java.io.IOException e){throw new RuntimeException(e);}}
+            world.getServer().runOnServer(server->{var p=conn.getServerPlayer();var d=ProtectionData.get(conn.getServerLevel());var saved=d.owned(p.getUUID()).getFirst().shape();check(saved.contains(original)&&saved.contains(6,-45,2)&&d.owned(p.getUUID()).size()==1&&d.matrices(p.getUUID())==1&&p.getInventory().getItem(1).getCount()==1,"Only the new section changes height; saved base, identity and spare matrix are retained");check(ProtectionSuggestions.hints(p).isEmpty(),"A single applied expansion clears the outside notice");});
+            // Create a separate addition and use NEXO's proposal without drawing the base again.
+            c.getInput().pressKey(InputConstants.KEY_ESCAPE);c.waitForScreen(null);world.getServer().runOnServer(server->conn.getServerPlayer().setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(Items.OAK_PLANKS,2)));world.getServer().runCommand("tp @a 11.5 -60 2.5 0 0");conn.waitForClientboundPackets();c.waitTicks(3);aim(c,new Vec3(10.5,-60.98,3.5));c.getInput().pressKey(o->o.keyUse);c.waitTicks(4);world.getServer().runOnServer(server->conn.getServerPlayer().setItemInHand(InteractionHand.MAIN_HAND,new ItemStack(UmbralContent.CONFIGURATOR)));conn.waitForClientboundPackets();c.getInput().lookAt(180,-60);c.getInput().pressKey(o->o.keyUse);c.waitForScreen(ProtectionScreen.class);click(c,"protection.umbral.assistant_hint");layout(c);capture(c,"umbral-guided-nexo-works");click(c,"protection.umbral.suggest");c.waitForScreen(ProtectionScreen.class);capture(c,"umbral-guided-nexo-proposal");review(c);confirm(c);
+            // Shortage is explained before any payment or active-area edit.
+            rectangle(c,9,-3,35,15);review(c);world.getServer().runOnServer(server->{conn.getServerPlayer().getInventory().setItem(1,ItemStack.EMPTY);conn.getServerPlayer().containerMenu.broadcastChanges();});conn.waitForClientboundPackets();c.waitTicks(4);check(!enabled(c,"protection.umbral.confirm"),"Missing physical material disables confirmation");capture(c,"umbral-guided-materials-missing");
+            c.runOnClient(mc->{mc.options.guiScale().set(3);mc.resizeGui();});layout(c);capture(c,"umbral-guided-review-gui3");c.getInput().resizeWindow(640,480);c.waitTicks(3);layout(c);capture(c,"umbral-guided-review-small");click(c,"protection.umbral.recipe");layout(c);capture(c,"umbral-guided-recipe-small");click(c,"protection.umbral.back");
+            var english=c.computeOnClient(mc->{mc.getLanguageManager().setSelected("en_us");mc.options.languageCode="en_us";return mc.reloadResourcePacks();});c.waitFor(mc->english.isDone()&&mc.gui.overlay()==null,1000);layout(c);capture(c,"umbral-guided-review-english-small");click(c,"protection.umbral.back_plan");c.waitForScreen(ProtectionScreen.class);click(c,"protection.umbral.discard");
+            c.getInput().resizeWindow(1280,800);c.runOnClient(mc->{mc.options.guiScale().set(2);mc.resizeGui();});click(c,"protection.umbral.advanced");height(c,"protection.umbral.height",-61,-61);c.waitForScreen(ProtectionScreen.class);rectangle(c,12,6,13,7);click(c,"protection.umbral.apply");check(!enabled(c,"protection.umbral.confirm"),"A single-layer addition requires deliberate acknowledgment");capture(c,"umbral-guided-thin-warning");click(c,"protection.umbral.thin_accept");check(enabled(c,"protection.umbral.confirm"),"Advanced users may explicitly keep a one-layer area");click(c,"protection.umbral.back_plan");click(c,"protection.umbral.discard");
+        }
+    }
+}

@@ -1,0 +1,20 @@
+{
+  "replace": false,
+  "values": [
+    "umbral:electric_fence",
+    "umbral:inventory_scanner",
+    "umbral:network_core",
+    "umbral:sector_node",
+    "umbral:terminal",
+    "umbral:security_camera",
+    "umbral:copper_cable",
+    "umbral:security_door",
+    "umbral:card_reader",
+    "umbral:baluarte_turret",
+    "umbral:centella_turret",
+    "umbral:presence_sensor",
+    "umbral:pulse_mine",
+    "umbral:nexo_terminal",
+    "umbral:mota_dock"
+  ]
+}

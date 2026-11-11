@@ -1,0 +1,27 @@
+{
+  "required": true,
+  "package": "dev.umbral.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "mixins": [
+    "ProtectionPlayerMixin",
+    "ProtectionLevelMixin",
+    "ProtectionExplosionMixin",
+    "ProtectionPistonMixin",
+    "ProtectionFluidMixin",
+    "ProtectionDispenserMixin",
+    "ProtectionCompoundAccess",
+    "ProtectionHopperMixin",
+    "ProtectionFireMixin",
+    "ProtectionEndermanTakeMixin",
+    "ProtectionEndermanPlaceMixin",
+    "ProtectionBlockItemMixin",
+    "ProtectionBucketMixin",
+    "ProtectionFallingMixin",
+    "ProtectionFarmlandMixin",
+    "ProtectionEggMixin",
+    "ProtectionTntMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

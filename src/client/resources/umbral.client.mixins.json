@@ -1,0 +1,13 @@
+{
+  "required": true,
+  "package": "dev.umbral.client.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "CameraAccessor",
+    "CameraMotionMixin",
+    "GuiStateAccessor"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

@@ -1,0 +1,124 @@
+// SPDX-License-Identifier: MPL-2.0
+
+plugins {
+    id 'net.fabricmc.fabric-loom' version "${loom_version}"
+}
+
+version = project.mod_version
+group = project.maven_group
+
+repositories { mavenCentral() }
+
+loom {
+    splitEnvironmentSourceSets()
+    mods {
+        umbral {
+            sourceSet sourceSets.main
+            sourceSet sourceSets.client
+        }
+    }
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    implementation "net.fabricmc:fabric-loader:${project.loader_version}"
+    implementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_api_version}"
+
+    testImplementation platform('org.junit:junit-bom:5.12.2')
+    testImplementation 'org.junit.jupiter:junit-jupiter'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+}
+
+processResources {
+    inputs.property 'version', project.version
+    filesMatching('fabric.mod.json') { expand version: project.version }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    options.release = 25
+    options.encoding = 'UTF-8'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_25
+    targetCompatibility = JavaVersion.VERSION_25
+    withSourcesJar()
+}
+
+test { useJUnitPlatform() }
+
+fabricApi {
+    configureTests {
+        createSourceSet = true
+        modId = 'umbral-test'
+        enableGameTests = true
+        enableClientGameTests = true
+        eula = true
+    }
+}
+
+// Minecraft 26.3 requires extra native stack headroom on Windows and explicit
+// Java 25 native/Unsafe access. Keep all client launchers on the same metadata.
+def clientJvmConfig = new groovy.json.JsonSlurper().parse(file('config/client-jvm-args.json'))
+if (clientJvmConfig.minecraft != project.minecraft_version)
+    throw new GradleException('Review config/client-jvm-args.json for this Minecraft version')
+loom.runs.configureEach { run ->
+    if (run.name in ['client', 'clientGameTest']) run.vmArgs(clientJvmConfig.arguments)
+}
+
+// Minecraft 26.3 stores dimension SavedData under world/dimensions. The test plugin's
+// cleanup preserves that new directory, so repeated runs otherwise share old ledgers.
+// Only this disposable test world is removed; development/user worlds are unaffected.
+tasks.named('deleteGameTestRunDir') {
+    doLast { project.delete(layout.buildDirectory.dir('run/gameTest/world')) }
+}
+
+// Run named native client scenarios (comma-separated); the default still runs the full suite.
+tasks.named('processGametestResources') {
+    def clientTest = providers.gradleProperty('umbralClientTest')
+    def performance = providers.gradleProperty('umbralPerf')
+    inputs.property('umbralClientTest', clientTest.orElse('all'))
+    inputs.property('umbralPerf', performance.orElse('false'))
+    doLast {
+        if (clientTest.isPresent() || performance.isPresent()) {
+            def metadataFile = new File(destinationDir, 'fabric.mod.json')
+            def metadata = new groovy.json.JsonSlurper().parse(metadataFile)
+            if (performance.isPresent()) {
+                metadata.entrypoints['fabric-gametest'] = ['dev.umbral.test.PerformanceBenchmarkGameTests']
+                metadata.entrypoints['fabric-client-gametest'] = ['dev.umbral.client.PerformanceClientGameTest']
+            }
+            if (clientTest.isPresent()) {
+            def requested = clientTest.get().split(',').collect { it.trim() }.findAll { !it.isEmpty() }
+            def available = metadata.entrypoints['fabric-client-gametest']
+            if (requested.isEmpty() || requested.any { name -> !available.any { it == name || it.endsWith('.' + name) } })
+                throw new GradleException('Unknown UMBRAL client test: ' + clientTest.get())
+            def matches = available.findAll { test -> requested.any { test == it || test.endsWith('.' + it) } }
+            metadata.entrypoints['fabric-client-gametest'] = matches
+            }
+            metadataFile.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(metadata)) + '\n'
+        }
+    }
+}
+
+// Export dependencies without launching tests or compiling project gameplay classes.
+// The external multiplayer launcher removes every project output from this list.
+tasks.register('exportMultiplayerClasspath') {
+    def target = layout.buildDirectory.file('multiplayer-classpath.json')
+    outputs.file(target)
+    outputs.upToDateWhen { false }
+    doLast {
+        def run = tasks.named('runClientGameTest').get()
+        def output = target.get().asFile
+        output.parentFile.mkdirs()
+        output.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson([
+            classpath: run.classpath.files.collect { it.absolutePath },
+            sourceTask: 'runClientGameTest'
+        ])) + '\n'
+    }
+}
+
+['jar', 'sourcesJar'].each { taskName ->
+    tasks.named(taskName, Jar) {
+        from('LICENSE', 'LICENSE-SCOPE.md', 'ASSET-LICENSE.md', 'THIRD_PARTY_NOTICES.md')
+    }
+}

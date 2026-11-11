@@ -1,0 +1,196 @@
+{
+  "variants": {
+    "north=false,south=false,west=false,east=false,down=false,up=false": {
+      "model": "umbral:block/cable_state_00"
+    },
+    "north=true,south=false,west=false,east=false,down=false,up=false": {
+      "model": "umbral:block/cable_state_01"
+    },
+    "north=false,south=true,west=false,east=false,down=false,up=false": {
+      "model": "umbral:block/cable_state_02"
+    },
+    "north=true,south=true,west=false,east=false,down=false,up=false": {
+      "model": "umbral:block/cable_state_03"
+    },
+    "north=false,south=false,west=true,east=false,down=false,up=false": {
+      "model": "umbral:block/cable_state_04"
+    },
+    "north=true,south=false,west=true,east=false,down=false,up=false": {
+      "model": "umbral:block/cable_state_05"
+    },
+    "north=false,south=true,west=true,east=false,down=false,up=false": {
+      "model": "umbral:block/cable_state_06"
+    },
+    "north=true,south=true,west=true,east=false,down=false,up=false": {
+      "model": "umbral:block/cable_state_07"
+    },
+    "north=false,south=false,west=false,east=true,down=false,up=false": {
+      "model": "umbral:block/cable_state_08"
+    },
+    "north=true,south=false,west=false,east=true,down=false,up=false": {
+      "model": "umbral:block/cable_state_09"
+    },
+    "north=false,south=true,west=false,east=true,down=false,up=false": {
+      "model": "umbral:block/cable_state_0a"
+    },
+    "north=true,south=true,west=false,east=true,down=false,up=false": {
+      "model": "umbral:block/cable_state_0b"
+    },
+    "north=false,south=false,west=true,east=true,down=false,up=false": {
+      "model": "umbral:block/cable_state_0c"
+    },
+    "north=true,south=false,west=true,east=true,down=false,up=false": {
+      "model": "umbral:block/cable_state_0d"
+    },
+    "north=false,south=true,west=true,east=true,down=false,up=false": {
+      "model": "umbral:block/cable_state_0e"
+    },
+    "north=true,south=true,west=true,east=true,down=false,up=false": {
+      "model": "umbral:block/cable_state_0f"
+    },
+    "north=false,south=false,west=false,east=false,down=true,up=false": {
+      "model": "umbral:block/cable_state_10"
+    },
+    "north=true,south=false,west=false,east=false,down=true,up=false": {
+      "model": "umbral:block/cable_state_11"
+    },
+    "north=false,south=true,west=false,east=false,down=true,up=false": {
+      "model": "umbral:block/cable_state_12"
+    },
+    "north=true,south=true,west=false,east=false,down=true,up=false": {
+      "model": "umbral:block/cable_state_13"
+    },
+    "north=false,south=false,west=true,east=false,down=true,up=false": {
+      "model": "umbral:block/cable_state_14"
+    },
+    "north=true,south=false,west=true,east=false,down=true,up=false": {
+      "model": "umbral:block/cable_state_15"
+    },
+    "north=false,south=true,west=true,east=false,down=true,up=false": {
+      "model": "umbral:block/cable_state_16"
+    },
+    "north=true,south=true,west=true,east=false,down=true,up=false": {
+      "model": "umbral:block/cable_state_17"
+    },
+    "north=false,south=false,west=false,east=true,down=true,up=false": {
+      "model": "umbral:block/cable_state_18"
+    },
+    "north=true,south=false,west=false,east=true,down=true,up=false": {
+      "model": "umbral:block/cable_state_19"
+    },
+    "north=false,south=true,west=false,east=true,down=true,up=false": {
+      "model": "umbral:block/cable_state_1a"
+    },
+    "north=true,south=true,west=false,east=true,down=true,up=false": {
+      "model": "umbral:block/cable_state_1b"
+    },
+    "north=false,south=false,west=true,east=true,down=true,up=false": {
+      "model": "umbral:block/cable_state_1c"
+    },
+    "north=true,south=false,west=true,east=true,down=true,up=false": {
+      "model": "umbral:block/cable_state_1d"
+    },
+    "north=false,south=true,west=true,east=true,down=true,up=false": {
+      "model": "umbral:block/cable_state_1e"
+    },
+    "north=true,south=true,west=true,east=true,down=true,up=false": {
+      "model": "umbral:block/cable_state_1f"
+    },
+    "north=false,south=false,west=false,east=false,down=false,up=true": {
+      "model": "umbral:block/cable_state_20"
+    },
+    "north=true,south=false,west=false,east=false,down=false,up=true": {
+      "model": "umbral:block/cable_state_21"
+    },
+    "north=false,south=true,west=false,east=false,down=false,up=true": {
+      "model": "umbral:block/cable_state_22"
+    },
+    "north=true,south=true,west=false,east=false,down=false,up=true": {
+      "model": "umbral:block/cable_state_23"
+    },
+    "north=false,south=false,west=true,east=false,down=false,up=true": {
+      "model": "umbral:block/cable_state_24"
+    },
+    "north=true,south=false,west=true,east=false,down=false,up=true": {
+      "model": "umbral:block/cable_state_25"
+    },
+    "north=false,south=true,west=true,east=false,down=false,up=true": {
+      "model": "umbral:block/cable_state_26"
+    },
+    "north=true,south=true,west=true,east=false,down=false,up=true": {
+      "model": "umbral:block/cable_state_27"
+    },
+    "north=false,south=false,west=false,east=true,down=false,up=true": {
+      "model": "umbral:block/cable_state_28"
+    },
+    "north=true,south=false,west=false,east=true,down=false,up=true": {
+      "model": "umbral:block/cable_state_29"
+    },
+    "north=false,south=true,west=false,east=true,down=false,up=true": {
+      "model": "umbral:block/cable_state_2a"
+    },
+    "north=true,south=true,west=false,east=true,down=false,up=true": {
+      "model": "umbral:block/cable_state_2b"
+    },
+    "north=false,south=false,west=true,east=true,down=false,up=true": {
+      "model": "umbral:block/cable_state_2c"
+    },
+    "north=true,south=false,west=true,east=true,down=false,up=true": {
+      "model": "umbral:block/cable_state_2d"
+    },
+    "north=false,south=true,west=true,east=true,down=false,up=true": {
+      "model": "umbral:block/cable_state_2e"
+    },
+    "north=true,south=true,west=true,east=true,down=false,up=true": {
+      "model": "umbral:block/cable_state_2f"
+    },
+    "north=false,south=false,west=false,east=false,down=true,up=true": {
+      "model": "umbral:block/cable_state_30"
+    },
+    "north=true,south=false,west=false,east=false,down=true,up=true": {
+      "model": "umbral:block/cable_state_31"
+    },
+    "north=false,south=true,west=false,east=false,down=true,up=true": {
+      "model": "umbral:block/cable_state_32"
+    },
+    "north=true,south=true,west=false,east=false,down=true,up=true": {
+      "model": "umbral:block/cable_state_33"
+    },
+    "north=false,south=false,west=true,east=false,down=true,up=true": {
+      "model": "umbral:block/cable_state_34"
+    },
+    "north=true,south=false,west=true,east=false,down=true,up=true": {
+      "model": "umbral:block/cable_state_35"
+    },
+    "north=false,south=true,west=true,east=false,down=true,up=true": {
+      "model": "umbral:block/cable_state_36"
+    },
+    "north=true,south=true,west=true,east=false,down=true,up=true": {
+      "model": "umbral:block/cable_state_37"
+    },
+    "north=false,south=false,west=false,east=true,down=true,up=true": {
+      "model": "umbral:block/cable_state_38"
+    },
+    "north=true,south=false,west=false,east=true,down=true,up=true": {
+      "model": "umbral:block/cable_state_39"
+    },
+    "north=false,south=true,west=false,east=true,down=true,up=true": {
+      "model": "umbral:block/cable_state_3a"
+    },
+    "north=true,south=true,west=false,east=true,down=true,up=true": {
+      "model": "umbral:block/cable_state_3b"
+    },
+    "north=false,south=false,west=true,east=true,down=true,up=true": {
+      "model": "umbral:block/cable_state_3c"
+    },
+    "north=true,south=false,west=true,east=true,down=true,up=true": {
+      "model": "umbral:block/cable_state_3d"
+    },
+    "north=false,south=true,west=true,east=true,down=true,up=true": {
+      "model": "umbral:block/cable_state_3e"
+    },
+    "north=true,south=true,west=true,east=true,down=true,up=true": {
+      "model": "umbral:block/cable_state_3f"
+    }
+  }
+}

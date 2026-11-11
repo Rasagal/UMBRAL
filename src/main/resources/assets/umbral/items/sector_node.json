@@ -1,0 +1,6 @@
+{
+  "model": {
+    "type": "minecraft:model",
+    "model": "umbral:block/sector_node_off"
+  }
+}

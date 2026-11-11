@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "redstone",
+  "pattern": [
+    "ICI",
+    "BQB",
+    "IRI"
+  ],
+  "key": {
+    "I": "minecraft:iron_ingot",
+    "C": "minecraft:copper_ingot",
+    "B": "minecraft:iron_bars",
+    "Q": "minecraft:quartz",
+    "R": "minecraft:redstone"
+  },
+  "result": {
+    "id": "umbral:electric_fence",
+    "count": 6
+  }
+}

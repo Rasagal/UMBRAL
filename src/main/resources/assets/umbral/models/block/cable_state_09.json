@@ -1,0 +1,541 @@
+{
+  "parent": "minecraft:block/block",
+  "ambientocclusion": true,
+  "textures": {
+    "graphite": "umbral:block/metal_graphite",
+    "ivory": "umbral:block/metal_ivory",
+    "copper": "umbral:block/metal_copper",
+    "shadow": "umbral:block/shadow",
+    "amethyst": "umbral:block/amethyst",
+    "red": "umbral:block/red",
+    "door_graphite": "umbral:block/door_graphite",
+    "door_copper": "umbral:block/door_copper",
+    "door_steel": "umbral:block/door_steel",
+    "door_ivory": "umbral:block/door_ivory",
+    "door_ivory_light": "umbral:block/door_ivory_light",
+    "door_ivory_shade": "umbral:block/door_ivory_shade",
+    "door_gasket": "umbral:block/door_gasket",
+    "steel": "umbral:block/metal_steel",
+    "gasket": "umbral:block/metal_gasket",
+    "ivory_light": "umbral:block/metal_ivory_light",
+    "ivory_shade": "umbral:block/metal_ivory_shade",
+    "gold": "umbral:block/metal_gold",
+    "status": "umbral:block/amber",
+    "display": "umbral:block/display_off",
+    "optic": "umbral:block/sensor_lens",
+    "particle": "umbral:block/metal_graphite"
+  },
+  "elements": [
+    {
+      "name": "union_compacta",
+      "from": [
+        7.25,
+        0.75,
+        7.25
+      ],
+      "to": [
+        8.75,
+        2.25,
+        8.75
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            1.5,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            1.5,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            1.5,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            1.5,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            1.5,
+            1.5
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            1.5,
+            1.5
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "funda_0",
+      "from": [
+        7.25,
+        1.18934,
+        0
+      ],
+      "to": [
+        8.75,
+        1.81066,
+        7.25
+      ],
+      "faces": {
+        "east": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213199999999999
+          ],
+          "texture": "#graphite"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213199999999999
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "funda_1",
+      "from": [
+        7.68934,
+        0.75,
+        0
+      ],
+      "to": [
+        8.31066,
+        2.25,
+        7.25
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.6213200000000008,
+            7.25
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.6213200000000008,
+            7.25
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "funda_2",
+      "from": [
+        7.25,
+        1.18934,
+        0
+      ],
+      "to": [
+        8.75,
+        1.81066,
+        7.25
+      ],
+      "faces": {
+        "east": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213199999999999
+          ],
+          "texture": "#steel"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213199999999999
+          ],
+          "texture": "#steel"
+        }
+      },
+      "rotation": {
+        "origin": [
+          8.0,
+          1.5,
+          3.625
+        ],
+        "axis": "z",
+        "angle": 45,
+        "rescale": false
+      }
+    },
+    {
+      "name": "funda_3",
+      "from": [
+        7.25,
+        1.18934,
+        0
+      ],
+      "to": [
+        8.75,
+        1.81066,
+        7.25
+      ],
+      "faces": {
+        "east": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213199999999999
+          ],
+          "texture": "#graphite"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213199999999999
+          ],
+          "texture": "#graphite"
+        }
+      },
+      "rotation": {
+        "origin": [
+          8.0,
+          1.5,
+          3.625
+        ],
+        "axis": "z",
+        "angle": -45,
+        "rescale": false
+      }
+    },
+    {
+      "name": "hilo_cobre",
+      "from": [
+        7.91,
+        2.25,
+        0
+      ],
+      "to": [
+        8.09,
+        2.32,
+        7.17
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            0.17999999999999972,
+            0.06999999999999984
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            0.17999999999999972,
+            0.06999999999999984
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            7.17,
+            0.06999999999999984
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            7.17,
+            0.06999999999999984
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            0.17999999999999972,
+            7.17
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            0.17999999999999972,
+            7.17
+          ],
+          "texture": "#copper"
+        }
+      }
+    },
+    {
+      "name": "funda_0",
+      "from": [
+        8.75,
+        0.75,
+        7.68934
+      ],
+      "to": [
+        16,
+        2.25,
+        8.31066
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213200000000008
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213200000000008
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "funda_1",
+      "from": [
+        8.75,
+        1.18934,
+        7.25
+      ],
+      "to": [
+        16,
+        1.81066,
+        8.75
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213199999999999
+          ],
+          "texture": "#graphite"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213199999999999
+          ],
+          "texture": "#graphite"
+        }
+      }
+    },
+    {
+      "name": "funda_2",
+      "from": [
+        8.75,
+        0.75,
+        7.68934
+      ],
+      "to": [
+        16,
+        2.25,
+        8.31066
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213200000000008
+          ],
+          "texture": "#steel"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213200000000008
+          ],
+          "texture": "#steel"
+        }
+      },
+      "rotation": {
+        "origin": [
+          12.375,
+          1.5,
+          8.0
+        ],
+        "axis": "x",
+        "angle": 45,
+        "rescale": false
+      }
+    },
+    {
+      "name": "funda_3",
+      "from": [
+        8.75,
+        0.75,
+        7.68934
+      ],
+      "to": [
+        16,
+        2.25,
+        8.31066
+      ],
+      "faces": {
+        "up": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213200000000008
+          ],
+          "texture": "#graphite"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            7.25,
+            0.6213200000000008
+          ],
+          "texture": "#graphite"
+        }
+      },
+      "rotation": {
+        "origin": [
+          12.375,
+          1.5,
+          8.0
+        ],
+        "axis": "x",
+        "angle": -45,
+        "rescale": false
+      }
+    },
+    {
+      "name": "hilo_cobre",
+      "from": [
+        8.83,
+        2.25,
+        7.91
+      ],
+      "to": [
+        16,
+        2.32,
+        8.09
+      ],
+      "faces": {
+        "north": {
+          "uv": [
+            0,
+            0,
+            7.17,
+            0.06999999999999984
+          ],
+          "texture": "#copper"
+        },
+        "south": {
+          "uv": [
+            0,
+            0,
+            7.17,
+            0.06999999999999984
+          ],
+          "texture": "#copper"
+        },
+        "east": {
+          "uv": [
+            0,
+            0,
+            0.17999999999999972,
+            0.06999999999999984
+          ],
+          "texture": "#copper"
+        },
+        "west": {
+          "uv": [
+            0,
+            0,
+            0.17999999999999972,
+            0.06999999999999984
+          ],
+          "texture": "#copper"
+        },
+        "up": {
+          "uv": [
+            0,
+            0,
+            7.17,
+            0.17999999999999972
+          ],
+          "texture": "#copper"
+        },
+        "down": {
+          "uv": [
+            0,
+            0,
+            7.17,
+            0.17999999999999972
+          ],
+          "texture": "#copper"
+        }
+      }
+    }
+  ]
+}
